@@ -1,0 +1,357 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr 300px;
+    height: 800px;
+    overflow: hidden;
+}
+
+#menu {
+    background-color: rgb(255, 255, 255);
+}
+
+.logo {
+    padding: 20px 30px;
+}
+
+#food-container {
+    background-color: rgb(231, 115, 73);
+    overflow: scroll;
+    overflow-x: hidden;
+    box-sizing: content-box;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 2px;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background-color: whitesmoke;
+    z-index: 1;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#header .adress {
+    font-size: 15px;
+}
+
+.adress {
+    color: rgb(255, 255, 255);
+    background-color:  rgb(229, 14, 75);
+    padding: 6px 10px;
+    border-radius: 5px;
+    width: 150px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.adress:hover{
+    background-color: blue;
+    color: white;
+}
+.box i {
+    font-size: 20px;
+}
+
+.util i,
+.user i {
+    font-size: 18px;
+    margin: 0px 16px;
+    color: rgb(241, 234, 234);
+    background-color: rgb(229, 14, 75);
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    letter-spacing: 4px;
+}
+
+.util i:hover {
+    background-color: blue;
+    color: white;
+}
+.user i:hover{
+    background-color: blue;
+    color: white;
+}
+#biryani,
+#paneer,
+#italiyan,
+#mexican,
+#spanish#south-indian {
+    margin-top: 40px;
+}
+
+#biryani #item-card,
+#italiyan #item-card {
+    background-color: rgb(231, 162, 109)
+}
+
+#paneer #item-card,
+#italiyan #item-card {
+    background-color: rgb(108, 235, 212)
+}
+
+#italiyn #item-card,
+#italiyan #item-card {
+    background-color: rgb(32, 149, 102)
+}
+
+#mexican #item-card,
+#italiyan #item-card {
+    background-color: rgb(236, 46, 113)
+}
+
+#spanish #item-card,
+#italiyan #item-card {
+    background-color: rgb(48, 201, 206)
+}
+
+#south-indian #item-card,
+#italiyan #item-card {
+    background-color: rgb(161, 43, 112)
+}
+
+#catogry-name,
+.item-menu {
+    margin: 10px;
+    margin-left: 30px;
+    font-size: 35px;
+    color: rgb(0, 7, 206);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#item-card {
+    width: 190px;
+    height: 224px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 30px;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+
+#item-card img {
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+    border-radius: 50%;
+    margin-top: 20px;
+    display: block;
+    margin-bottom: 15px;
+    transition: 0.5s all ease-in-out;
+}
+
+#item-card:hover img {
+    transform: scale(1.2);
+}
+
+#card-top {
+    display: flex;
+    margin: 6px 0px;
+    justify-content: space-between;
+}
+
+#rating {
+    padding: 10px;
+    color: goldenrod;
+    background-color: black;
+    font-size: 10px;
+    border-radius: 14px;
+    letter-spacing: 4px;
+}
+
+.fa-heart {
+
+    padding: 7px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.fa-heart:hover {
+    background-color: rgb(255, 115, 0);
+    color: white;
+}
+
+#item-name {
+    position: relative;
+    top: -10px;
+    font-weight: bold;
+    color: rgb(157, 16, 192);
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+#paneer #item-name {
+    color: rgb(30, 0, 255);
+}
+
+#italiyn #item-name {
+    color: rgb(11, 186, 239);
+}
+
+#mexican #item-name {
+    color: rgb(30, 0, 255);
+}
+
+#spanish #item-name {
+    color: rgb(0, 8, 255);
+}
+
+#south-indian #item-name {
+    color: rgb(0, 234, 255);
+}
+
+#item-price {
+    position: relative;
+    top: -6px;
+    color: rgb(243, 14, 83);
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+#paneer #item-price {
+    color: rgb(255, 0, 85);
+}
+
+#italiyn #item-price {
+    color: rgb(255, 149, 0);
+}
+
+#mexican #item-price {
+    color: rgb(9, 213, 245);
+}
+
+#spanish #item-price {
+    color: rgb(255, 0, 0);
+}
+#south-indian  #item-price {
+    color: rgb(14, 236, 25);
+}
+#menu a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(55, 52, 52);
+    padding: 10px 30px;
+    margin: 10px 0px;
+
+}
+
+#menu a:hover {
+    background-color: rgb(221, 136, 136);
+}
+
+#cart {
+    background-color: rgb(255, 255, 255);
+    padding-right: 30px;
+    overflow-y: scroll;
+}
+.taste-header {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.item-menu {
+    margin-left: 20px;
+    font-size: 30px;
+    margin-top: 40px;
+    color: rgb(224, 33, 33);
+    background-color: rgb(255, 255, 255);
+}
+
+.border {
+    width: 180px;
+    height: 4px;
+    margin: 3px 20px;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    background-color: coral;
+}
+
+.list-card {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    border-radius: 25px;
+    transition: 0.5s all ease-in-out;
+}
+
+.list-card:hover {
+    background-color: rgb(5, 5, 244);
+    margin-left: 20px;
+}
+
+.list-card:hover img {
+    transition: 0.5s ease-in-out;
+    transform: scale(1.2);
+}
+
+.list-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.list-name {
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: rgb(255, 0, 98);
+}
+.list-name:hover{
+    color: rgb(0, 255, 217);
+}
+.btn{
+    margin-top: 50px;
+    margin-left: 30px;
+    padding: 5px 10px;
+    font-size: 20px;
+    color: rgb(255, 0, 144);
+    background-color: transparent;
+    border: 1px solid rgb(255, 0, 238);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.btn:before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 26, 255);
+    z-index: -1;
+    transition: .5s;
+    position: absolute;
+    top: 0;
+    left: -100%;
+}
+.btn:hover.btn:before{
+left: 0;
+}
